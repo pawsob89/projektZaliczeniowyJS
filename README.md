@@ -6,19 +6,10 @@ Aby zobaczyć listę samochodów, wystarczy otworzyć aplikację. Lista będzie 
 
 Po kliknięciu na dane auto, lista zostaje ukryta, a użytkownikowi wyświetlany jest formularz konfiguracji zakupu.
 
-Formularz zawiera następujące pola:
-
-Wybranie finansowania: leasing lub gotówka.
-Imię i nazwisko przyszłego właściciela;
-Data dostawy - domyślnie ustawiona na minimum 14 dni od bieżącego dnia. Datę dostawy na wskazany wybiera kupujący.
-Wybór akcesoriów - lista statyczna zawierająca nazwę i cenę.
-Po wypełnieniu formularza, użytkownik może kliknąć przycisk "Zakup", który potwierdzi zakup i waliduje formularz. Jeśli dane w formularzu nie są poprawne, zostanie pokazany błąd na dole formularza.
-
 Jak korzystać z aplikacji:
 
-Aby zobaczyć listę samochodów, wystarczy otworzyć aplikację. Lista będzie dostępna od razu po uruchomieniu. Użytkownik może przewijać listę aby zobaczyć wszystkie dostępne samochody.
+Aby zobaczyć listę samochodów, wystarczy otworzyć aplikację. Lista będzie dostępna od razu po uruchomieniu. Użytkownik może przewijać listę aby zobaczyć wszystkie dostępne samochody. Po kliknięciu na wybrany samochód użytkownik zostanie przeniesiony do opcji zakupy oraz formularza zamówienia. Uzytkowik musi wybrać opcję finansowania: gotówka albo leasing. W opcjach dodatkowy znajdziemy ubezpieczenie OC, ubezpieczenie AC oraz możliwość wykonania powłoki ceramicznej. Użytkowik może skorzystać ze wszystkich opcji (nie jest to obowiązkowe). Każda opcja ma podaną cenę. Cena się zmieni po kliknięciu "Potwierdź opcje". Po prawej stronie użytkownik wypełnia formularz zamówienia ze swoimi danymi i adresem dostawy. Auto zostaje dostarczone na wskazany adres. Po uzupełnieniu wszystkich pól użytkowik powinien kliknąć "Dokonaj zakupu". Następnie kupujący otrzyma podsumowanie swojego zakupu. 
 
-Jeśli użytkownik chce poznać więcej szczegółów, znajdzie je bezpośrednio pod zdjęciem. Po kliknięciu na wybrany samochód pojawi się formularz konfiguracji zakupu.
 
 Autor:
 Paweł Soboń
