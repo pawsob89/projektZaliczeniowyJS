@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  color: whitesmoke;
+}
+.bgVid {
+  position: fixed;
+  height: auto;
+  width: auto;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#111111;
+  height: 70px;
+  padding: 0 50px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main {
+  margin: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.sectionCars {
+  display: flex;
+}
+.formContainer {
+  display: none;
+}
+.summaryContainer {
+  display: none;
+}
+
+
+.car {
+  width: 300px;
+  height: 420px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.car:hover {
+  background-color: #111111;
+  cursor: pointer;
+}
+.car img {
+  max-width: 100%;
+  height: auto;
+}
+.car h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.car p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.button {
+  display: none;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold
+}
+
+button:hover {
+  display: block;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+  background-color: #111111;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.innerButton {
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold
+}
+
+.innerButton:hover {
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  background-color: #111111;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.returnButton {
+  display: none;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold
+}
+
+.returnButton:hover {
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  background-color: #111111;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.clearButton {
+  display: none;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold
+}
+
+.clearButton:hover {
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  background-color: #111111;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+div input {
+  margin: 10px 0px;
+}
+div label {
+  cursor: pointer;
+} 
+form div {
+  float: right;
+  margin-right:15px;
+}
+.warning{
+  visibility: hidden;
+  color: red;
+  font-size: 0.8em;
+  margin: 0px
+}
+ form input {
+  color: rgb(0, 0, 0);
+  margin-left: 5px;
+  background-color: #bfbfbf;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width:150px;
+} 
+
+footer p {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #111111;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  margin:0px
+}

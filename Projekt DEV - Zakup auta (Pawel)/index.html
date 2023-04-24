@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Zakup auta! Projekt zaliczeniowy!</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Twój wymarzony samochód</div>
+      <nav>
+        <ul>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <video class="bgVid" autoplay muted loop id="backgroundVid">
+        <source src="asset/vid/bg-vid.mp4" type="video/mp4" />
+      </video>
+      <h1 id="mainText">Tylko najlepsze samochody!</h1>
+      <section class="sectionCars">
+        <div class="mainContainer">
+          <div class="car" id="Porsche">
+            <img src="Asset\img\picture3.jpg" alt="Porsche" />
+            <h2>Porsche 911</h2>
+            <p>Cena: <span id="carPrice">769</span> tys zł</p>
+            <p>Rok produkcji: 2021</p>
+            <p>Moc silnika: 450 KM</p>
+            <p>Przebieg: 6 100 km</p>
+          </div>
+          <div class="car" id="Audi">
+            <img src="Asset\img\picture4.jpg" alt="AudiQ5" />
+            <h2>Audi Q5</h2>
+            <p>Cena: <span id="carPrice">266 </span> tys zł</p>
+            <p>Rok produkcji: 2021</p>
+            <p>Moc silnika: 204 KM</p>
+            <p>Przebieg: 6 000 km</p>
+          </div>
+          <div class="car" id="BMW">
+            <img src="Asset\img\picture5.jpg" alt="BMW3" />
+            <h2>BMW Seria 3</h2>
+            <p>Cena: <span id="carPrice">149.5 </span> tys zł</p>
+            <p>Rok produkcji: 2020</p>
+            <p>Moc silnika: 190 KM</p>
+            <p>Przebieg: 25 500 km</p>
+          </div>
+          <div class="car" id="Mercedes">
+            <img src="Asset\img\picture6.jpg" alt="MercedesA" />
+            <h2>Mercedes Klasa A</h2>
+            <p>Cena: <span id="carPrice">145 </span> tys zł</p>
+            <p>Rok produkcji: 2018</p>
+            <p>Moc silnika: 136 KM</p>
+            <p>Przebieg: 64 400 km</p>
+          </div>
+          <div class="car" id="Jaguar">
+            <img src="Asset\img\picture7.jpg" alt="Jaguar" />
+            <h2>Jaguar F-Type</h2>
+            <p>Cena: <span id="carPrice">225</span> tys zł</p>
+            <p>Rok produkcji: 2016</p>
+            <p>Moc silnika: 550 KM</p>
+            <p>Przebieg: 99 000 km</p>
+          </div>
+          <div class="car" id="Volvo">
+            <img src="Asset\img\picture8.jpg" alt="Volvo" />
+            <h2>Volvo XC60</h2>
+            <p>Cena: <span id="carPrice">139 </span> tys zł</p>
+            <p>Rok produkcji: 2019</p>
+            <p>Moc silnika: 150 KM</p>
+            <p>Przebieg: 95 310 km</p>
+          </div>
+        </div>
+      </section>
+      <section class="formContainer">
+        <div class="mainContainer">
+          <div class="car" id="selectedCar">
+            <img src="" alt="" />
+            <h2></h2>
+            <p><span id="carPrice"></span></p>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="car" id="addOptions">
+            <h2>Opcje Zakupu</h2>
+            <p>Rodzaj finansowania</p>
+            <div>
+              <input
+                class="radio"
+                type="radio"
+                id="cash"
+                name="financing"
+                value="cash"
+                checked
+              />
+              <label class="radio" for="cash">Gotówka</label>
+              <input
+                class="radio"
+                type="radio"
+                id="takeLeasing"
+                name="financing"
+                value="leasing"
+              />
+              <label class="radio" for="takeLeasing">Leasing</label>
+            </div>
+            <p>Opcje dodatkowe:</p>
+            <div>
+              <input
+                class="check"
+                type="checkbox"
+                id="OCinsurance"
+                name="optionOCinsurance"
+                value="OCinsurance"
+              />
+              <label for="OCinsurance"
+                >Ubezpieczenie OC: <span id="OCinsurance">4.6</span> tys
+                zł</label
+              >
+              <br />
+              <input
+                class="check"
+                type="checkbox"
+                id="ACinsurance"
+                name="optionACinsurance"
+                value="ACinsurance"
+              />
+              <label for="ACinsurance"
+                >Ubezpieczenie AC: <span id="ACinsurance">17.5</span> tys
+                zł</label
+              >
+              <br />
+              <input
+                class="check"
+                type="checkbox"
+                id="ceramicCoat"
+                name="optionCeramicCoat"
+                value="ceramicCoat"
+              />
+              <label class="radio" for="ceramicCoat"
+                >Powłoka ceramiczna: <span id="ceramicCoat">6</span> tys
+                zł</label
+              >
+            </div>
+            <p>Cena opcji: <span id="optionsPrice">0</span> tys zł</p>
+            <p>Cena całkowita: <span id="finalPrice">0</span> tys zł</p>
+            <button class="innerButton" id="optionBtn">Potwierdź opcje</button>
+          </div>
+          <div class="car" id="purchaseForm">
+            <h2>Formularz zamówienia</h2>
+            <h5 class="warning">Nie wszystkie pola formularza są wypełnione</h5>
+            <form name="userForm" class="form" id="userForm">
+              <div>
+                <label for="fName">Imię: </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="fName"
+                  placeholder="Jan"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="lName">Nazwisko: </label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lName"
+                  placeholder="Nowak"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="street">Ulica: </label>
+                <input
+                  type="text"
+                  id="street"
+                  name="street"
+                  placeholder="Poznańska"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="number">Numer domu: </label>
+                <input
+                  type="text"
+                  id="number"
+                  name="number"
+                  placeholder="10/5"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="zipCode">Kod pocztowy: </label>
+                <input
+                  type="text"
+                  id="zipCode"
+                  name="zipCode"
+                  placeholder="xx-yyy"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="city">Miasto: </label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Poznań"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="email">e-mail: </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="user@domain.com"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="phone">Numer tel: </label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="+48 567 567 567"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="date">Data dostawy: </label>
+                <input
+                  type="date"
+                  data-role="calendarpicker"
+                  id="datePicker"
+                  name="date"
+                  min="2023-04-21" 
+                  value=""
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <button class="returnButton" id="returnBtn">Powrót do wyboru</button>
+      <button class="button" id="summaryBtn">Dokonaj zakupu</button>
+      <section class="summaryContainer">
+        <div class="mainContainer">
+          <div class="car" id="summaryCar">
+            <img src="" alt="" />
+            <h2></h2>
+            <p><span id="carPrice"></span></p>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="car" id="selectedCar">
+            <h2>Twoje wybrane opcje</h2>
+            <p>Forma finansowania: <strong><span id="payMethod"></span></strong></p>
+            <p>Cena opcji dodatkowych: <strong><span id="sumOptionsPrice"></span></strong> tys zł</p>
+            <p>Cena całkowita: <strong><span id="sumFinalPrice"></span></strong> tys zł</p>
+            <p>Data dostawy: <strong><span id="sumDate"></span></strong></p>
+            <p><strong><span id="sumFName"></span> <span id="sumLName"></span></p>
+            <p><span id="sumStreet"></span> <span id="sumNumber"></span>, </p>
+            <p><span id="sumZipCode"> </span> <span id="sumCity"></span></p>
+            <p><span id="sumEmail"></span></p>
+            <p><span id="sumPhone"></span></strong></p>
+          </div></div>
+      </section>
+      <button class="clearButton" id="clearBtn">Powrót do głównej</button>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Projekt CDV - Frontend Developer - Paweł Soboń</p>
+      </div>
+    </footer>
+  </body>
+</html>
